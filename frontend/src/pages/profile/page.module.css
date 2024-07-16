@@ -33,15 +33,15 @@
 }
 
 .completed {
-  background-color: #9ad618;
+  background-color: #31ac13;
 }
 
 .canceled{
-  background-color: #ce651a;
+  background-color: #fc7303;
 }
 
 .platesLink {
-  color: #004643;
+  color: #f20530;
   text-decoration: underline;
 }
 

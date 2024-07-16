@@ -2,13 +2,27 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: 'Inter', sans-serif;
 }
 
 #root {
   font-size: x-large;
+  background-color: rgba(0, 0, 0, 0.8);
+	color: white;
+	min-height: 100vh;
+}
+
+main {
+	max-width: 1280px;
+	margin: 0 auto;
+	min-height: 100vh;
 }
 
 button {
+  display: flex;
+	gap: 0.5em;
+	align-items: center;
+	justify-content: center;
   width: fit-content;
   background-color: #f20530;
   color: white;
@@ -16,4 +30,10 @@ button {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  font-size: medium;
+}
+
+p {
+  display: flex;
+  gap: 0.2em;
 }
