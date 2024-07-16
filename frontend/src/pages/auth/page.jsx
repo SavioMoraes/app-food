@@ -66,6 +66,7 @@ export default function Auth() {
           </button>
           <form onSubmit={handleSubmitForm}>
             <TextField
+              className={styles.textField}
               required
               label="Email"
               type="email"
@@ -73,6 +74,7 @@ export default function Auth() {
               onChange={handleFormDataChange}
             />
             <TextField
+              className={styles.textField}
               required
               label="Password"
               type="password"
@@ -95,6 +97,7 @@ export default function Auth() {
           </button>
           <form onSubmit={handleSubmitForm}>
             <TextField
+              className={styles.textField}
               required
               label="Fullname"
               type="fullname"
@@ -102,6 +105,7 @@ export default function Auth() {
               onChange={handleFormDataChange}
             />
             <TextField
+              className={styles.textField}
               required
               label="Email"
               type="email"
@@ -109,6 +113,7 @@ export default function Auth() {
               onChange={handleFormDataChange}
             />
             <TextField
+              className={styles.textField}
               required
               label="Password"
               type="password"
@@ -116,6 +121,7 @@ export default function Auth() {
               onChange={handleFormDataChange}
             />
             <TextField
+              className={styles.textField}
               required
               label="Confirm password"
               type="password"
