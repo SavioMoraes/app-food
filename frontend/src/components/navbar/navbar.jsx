@@ -50,9 +50,9 @@ export default function Navbar() {
         
       >
         <div className={styles.drawer}>
-          <Link to={'/'} href="" className={styles.navbarLink}>Home</Link>
-          <Link to={'/plates'} href="" className={styles.navbarLink}>Plates</Link>
-          <Link to={'/profile'} href="" className={styles.navbarLink}>Profile</Link>
+          <Link to={'/'} href="" className={styles.navbarLink} onClick={handleOpenMenu}>Home</Link>
+          <Link to={'/plates'} href="" className={styles.navbarLink} onClick={handleOpenMenu}>Plates</Link>
+          <Link to={'/profile'} href="" className={styles.navbarLink} onClick={handleOpenMenu}>Profile</Link>
         </div>
       </Drawer>
     </nav>
