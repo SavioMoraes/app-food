@@ -16,7 +16,7 @@ export default function Navbar() {
     <nav className={styles.navbarContainer}>
       <div className={styles.navbarItems}>
         <Link to={'/'}>
-          <img src="/app-food-logo.png" alt="logo" className={styles.logo} />
+          <img src="/imgs/app-food-logo.png" alt="logo" className={styles.logo} />
         </Link>
         <div className={styles.navbarLinksContainer}>
           <Link to={'/'} href="" className={styles.navbarLink}>Home</Link>
@@ -32,7 +32,7 @@ export default function Navbar() {
 
       <div className={styles.mobileNavbarItems}>
         <Link to={'/'}>
-          <img src="/app-food-logo.png" alt="logo" className={styles.logo} />
+          <img src="/imgs/app-food-logo.png" alt="logo" className={styles.logo} />
         </Link>
 
         <div className={styles.mobileNavbarBtns}>
@@ -50,9 +50,9 @@ export default function Navbar() {
         
       >
         <div className={styles.drawer}>
-          <Link to={'/'} href="" className={styles.navbarLink}>Home</Link>
-          <Link to={'/plates'} href="" className={styles.navbarLink}>Plates</Link>
-          <Link to={'/profile'} href="" className={styles.navbarLink}>Profile</Link>
+          <Link to={'/'} href="" className={styles.navbarLink} onClick={handleOpenMenu}>Home</Link>
+          <Link to={'/plates'} href="" className={styles.navbarLink} onClick={handleOpenMenu}>Plates</Link>
+          <Link to={'/profile'} href="" className={styles.navbarLink} onClick={handleOpenMenu}>Profile</Link>
         </div>
       </Drawer>
     </nav>

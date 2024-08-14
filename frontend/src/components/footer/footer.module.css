@@ -1,0 +1,31 @@
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f20530;
+  color: white;
+  gap: 1em;
+  padding-bottom: 1em;
+}
+
+.footerContainer img {
+  font-size: 1em;
+  width: 6em;
+}
+
+.linksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.link {
+  color: white;
+}
+
+.profileLink {
+  color: white;
+  text-decoration: underline;
+} 
