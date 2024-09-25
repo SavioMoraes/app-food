@@ -1,14 +1,16 @@
 import { Dialog } from "@mui/material";
+import styles from "./platePopup.module.css";
 
-export default function PlatePopup({ plateData, handleClosePopup }) {
+export default function PlatePopup({ plateData, onClose }) {
   return (
-    <Dialog open={true}>
-      <div>
+    <Dialog open={true} onClose={onClose}>
+      <div className={styles.popupContainer}>
         <img src={plateData.imgUrl} alt="" />
-        <div>
+        <div className={styles.popupContent}>
           <h2>{plateData.name}</h2>
+          <p className={styles.ingredients}>[{String(plateData.ingredients)}]</p>
           <p>{plateData.description}</p>
-          <p>$ {plateData.price}</p>
+          <h2>$ {plateData.price}</h2>
           <button>Add to cart</button>
         </div>
       </div>
