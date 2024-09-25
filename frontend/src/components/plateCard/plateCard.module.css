@@ -15,9 +15,13 @@
 }
 
 .cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
   position: absolute;
   color: white;
-  padding: .5em;
+  width: 90%;
+  padding-bottom: 0.5em;
 }
 
 .cardContainer::before {
