@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import plateServices from "../../services/plates";
 import Loading from "../loading/page.jsx";
+import PlateCard from "../../components/plateCard/plateCard.jsx";
 
 export default function Plate() {
   const { getAvailablePlates, plateLoading, refetchPlates, platesList } = plateServices();
@@ -18,9 +19,12 @@ export default function Plate() {
   console.log(platesList);
 
   return (
-    <div>
-      <h1>Plate</h1>
-      <p>This is the Plate page.</p>
-    </div>
+    <>
+      <div>
+        {platesList.map((plate) => (
+          <PlateCard plateData={plate} key={plate._id}/>
+        ))}
+      </div>
+    </>
   );
 }
